@@ -1,11 +1,11 @@
 :root {
+  font-family: "Noto Sans KR", sans-serif;
   --primary-black: #212224;
   --primary-yellow: #FFD400;
   --border-gray: #C8CAD2;
   --hover-gray: #F2F3F7;
   --active-gray: #E4E5Ed;
   --font-gray: #555969;
-  font-size: 14px;
 }
 section {
    min-height: 50px; /*임시*/
@@ -58,7 +58,6 @@ footer .left {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
 }
 
 footer .right {
@@ -102,6 +101,7 @@ footer p {
   display: flex;
   gap: 10px;
   border-radius: 8px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 20px;
 }
