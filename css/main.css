@@ -58,6 +58,11 @@ footer .left {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+}
+
+footer .right {
+  width: 800px;
 }
 
 footer .btn {
@@ -66,7 +71,7 @@ footer .btn {
   gap: 10px;
 }
 
-footer button {
+button {
   width: 160px;
   padding: 10px 0;
   background-color: #fff;
@@ -77,12 +82,12 @@ footer button {
   cursor: pointer;
 }
 
-footer button:hover {
+button:hover {
   background-color: var(--hover-gray);
   transition: 0.3s;
 }
 
-footer button:active {
+button:active {
   background-color: var(--active-gray);
 }
 
@@ -92,13 +97,22 @@ footer p {
   color: var(--font-gray);
 }
 
-footer .info-box {
+.info-box {
   padding: 10px;
   display: flex;
   gap: 10px;
   border-radius: 8px;
   font-weight: 700;
   line-height: 20px;
+}
+
+.icon-circle {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
 }
 
 .info-blue {
@@ -109,15 +123,6 @@ footer .info-box {
 .info-red {
   background: #FFF8F7;
   color: #FF7262;
-}
-
-.icon-circle {
-  display: flex;
-  width: 36px;
-  height: 36px;
-  justify-content: center;
-  border-radius: 50%;
-  align-items: center;
 }
 
 .icon-bg-blue {
