@@ -1,6 +1,10 @@
 :root {
   --primary-black: #212224;
   --primary-yellow: #FFD400;
+  --border-gray: #C8CAD2;
+  --hover-gray: #F2F3F7;
+  --active-gray: #E4E5Ed;
+  --font-gray: #555969;
   font-size: 14px;
 }
 section {
@@ -41,4 +45,85 @@ section {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+footer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+footer .left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .btn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+footer button {
+  width: 160px;
+  padding: 10px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid var(--border-gray);
+  font-weight: 800;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-color: var(--hover-gray);
+  transition: 0.3s;
+}
+
+footer button:active {
+  background-color: var(--active-gray);
+}
+
+footer p {
+  line-height: 140%;
+  font-weight: 600;
+  color: var(--font-gray);
+}
+
+footer .info-box {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.info-blue {
+  background: #F7FBFF;
+  color: #116AD4;
+}
+
+.info-red {
+  background: #FFF8F7;
+  color: #FF7262;
+}
+
+.icon-circle {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.icon-bg-blue {
+  background-color: #ebf4ff;
+}
+
+.icon-bg-red {
+  background-color: #ffedeb;
 }
