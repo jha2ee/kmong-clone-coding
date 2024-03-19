@@ -23,9 +23,6 @@
   margin-right: 20px;
   transition: 0.3s
 }
-.section-header .search:focus {
-  background-color: rgb(255, 255, 255);
-}
 .section-header .search:hover {
   background-color: rgb(242, 243, 247);
   border-color: rgb(48, 52, 65);

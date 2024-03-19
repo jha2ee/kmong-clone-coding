@@ -9,6 +9,12 @@
   --font-gray2: #727585;
   color: var(--primary-black);
 }
+
+input {
+  background-color: transparent;
+  outline: none;
+}
+
 section {
    min-height: 50px; /*임시*/
    display: flex;
