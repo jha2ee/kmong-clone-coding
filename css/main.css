@@ -1,0 +1,90 @@
+:root {
+  --primary-black: #212224;
+  --primary-yellow: #FFD400;
+  font-size: 14px;
+}
+
+.top-banner {
+  background-color: var(--primary-yellow);
+  
+}
+.sticky-banner {
+  object-fit: contain;
+  height: 48px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-header {
+  display: inline;
+  margin-right: auto;
+  margin-left: auto;
+}
+.section-header section {
+  display: flex;
+  gap: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  justify-content: center;
+}
+
+.section-header .search {
+  width: 460px;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid var(--primary-black);
+  padding-left: 18px;
+  padding-right: 18px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  transition: 0.3s
+}
+.section-header .search:focus {
+  background-color: rgb(255, 255, 255);
+}
+.section-header .search:hover {
+  background-color: rgb(242, 243, 247);
+  border-color: rgb(48, 52, 65);
+}
+.section-header .search-info {
+  display: none;
+}
+
+.section-header input {
+  border: none;
+  height: 38px;
+  width: 460px;
+}
+
+.section-header .item {
+  width:400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header .item a {
+  text-decoration: none;
+  color: var(--primary-black);
+  text-align: center;
+  font-weight: 600;
+}
+
+#signup {
+  background-color: var(--primary-yellow);
+  border-radius: 6px;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 800;
+  transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s;
+}
+
+#signup:hover {
+  background-color: rgb(245, 193, 38);
+}
+
+#signup:active {
+  background-color: rgb(184, 138, 3);
+}
