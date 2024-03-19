@@ -3,7 +3,34 @@
   --primary-yellow: #FFD400;
   font-size: 14px;
 }
+section {
+   min-height: 50px; /*임시*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.ad-banner img{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+.b1 {
+  background-color: #303441;
+  object-fit: contain;
+  height: 160px;
+}
+
+.b2 {
+  object-fit: contain;
+  height: 160px;
+  margin: 80px 0;
+}
+
+.b3 {
+  object-fit: contain;
+  height: 160px;
+}
 .top-banner {
   background-color: var(--primary-yellow);
   
