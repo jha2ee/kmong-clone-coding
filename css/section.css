@@ -7,7 +7,6 @@
   display: flex;
   gap: 20px;
   padding-top: 16px;
-  padding-bottom: 16px;
   justify-content: center;
 }
 
@@ -49,6 +48,10 @@
   color: var(--primary-black);
   text-align: center;
   font-weight: 600;
+}
+
+.section-header .category {
+  
 }
 
 #signup {
