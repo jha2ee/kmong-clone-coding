@@ -6,6 +6,8 @@
   --hover-gray: #F2F3F7;
   --active-gray: #E4E5Ed;
   --font-gray: #555969;
+  --font-gray2: #727585;
+  color: var(--primary-black);
 }
 section {
    min-height: 50px; /*임시*/
@@ -13,6 +15,29 @@ section {
    justify-content: center;
    align-items: center;
 }
+
+button {
+  width: 160px;
+  padding: 10px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid var(--border-gray);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--primary-black);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--hover-gray);
+  transition: 0.3s;
+}
+
+button:active {
+  background-color: var(--active-gray);
+}
+
 .ad-banner img{
   display: block;
   margin-right: auto;
@@ -49,9 +74,9 @@ section {
 
 footer {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   justify-content: center;
-  margin: 40px 0;
+  margin: 60px 0;
 }
 
 footer .left {
@@ -70,30 +95,33 @@ footer .btn {
   gap: 10px;
 }
 
-button {
-  width: 160px;
-  padding: 10px 0;
-  background-color: #fff;
-  border-radius: 8px;
-  border: 1px solid var(--border-gray);
-  font-weight: 800;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: var(--hover-gray);
-  transition: 0.3s;
-}
-
-button:active {
-  background-color: var(--active-gray);
-}
-
 footer p {
   line-height: 140%;
   font-weight: 600;
   color: var(--font-gray);
+}
+
+footer .list {
+  display: flex;
+  min-height: 60%;
+  margin-bottom: 30px;
+}
+
+.list .item {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-weight: 600;
+}
+
+.list .sub-item {
+  color: var(--font-gray2);
+  font-weight: 500;
+}
+
+.right .btn {
+  justify-content: end;
 }
 
 .info-box {
