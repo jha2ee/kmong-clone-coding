@@ -20,6 +20,12 @@ a {
   color: var(--primary-black);
 }
 
+iframe {
+  border-radius: 12px;
+  transition: opacity 1000ms ease 100ms;
+  opacity: 1;
+}
+
 .semi-title {
   width: 100%;
   font-size: 24px;
