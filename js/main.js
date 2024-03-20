@@ -47,9 +47,6 @@ function setFooter(data) {
 
 function setCategory(data) {
   const sectionEl = document.querySelector(".section-category");
-  console.log(sectionEl);
-  console.log(data);
-
   data.forEach((i) => {
     const boxEl = document.createElement("div");
     const title = Object.keys(i)[0];

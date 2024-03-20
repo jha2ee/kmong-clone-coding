@@ -68,6 +68,7 @@ button:active {
 }
 
 .ad-banner img{
+  cursor: pointer;
   display: block;
   margin-right: auto;
   margin-left: auto;
