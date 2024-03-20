@@ -10,13 +10,18 @@ function fetchData() {
 }
 
 function setMenu(data) {
-  //console.log(data);
-  return;
+  const menuEl = document.querySelector('.sub-category');
+  data.forEach(i => {
+    const item = document.createElement('div');
+    item.className = "sub-category-item";
+    item.textContent = i.title;
+    menuEl.appendChild(item);
+
+  })
 }
 
 function setFooter(data) {
   const footerEl = document.querySelector('#site-map');
-  console.log(footerEl);
 
   data.forEach(category  => {
     const item = document.createElement('div');
