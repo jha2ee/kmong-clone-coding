@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   margin-right: 20px;
-  transition: 0.3s
+  transition: 0.3s;
 }
 .section-header .search:hover {
   background-color: rgb(242, 243, 247);
@@ -32,7 +32,7 @@
 }
 
 .section-header .item {
-  width:400px;
+  width: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,9 +41,6 @@
 .section-header .item a {
   text-align: center;
   font-weight: 600;
-}
-.section-header .category {
-  border-bottom: 1px solid var(--active-gray);
 }
 
 .section-header .all-category {
@@ -77,4 +74,35 @@
 
 #signup:active {
   background-color: rgb(184, 138, 3);
+}
+
+.section-category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.section-category .box {
+  background-color: #fafafc;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.section-category .sub-items {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 16px;
+}
+.section-category .sub-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.section-category img {
+  width: 48px;
 }

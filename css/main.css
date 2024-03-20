@@ -20,10 +20,22 @@ a {
   color: var(--primary-black);
 }
 
+.semi-title {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 48px;
+
+}
+
+.hr-line {
+  border-top: 1px solid var(--active-gray);
+}
+
 section {
    min-height: 50px; /*임시*/
-   display: flex;
-   justify-content: center;
+   width: 1200px;
+   margin: 0 auto;
    align-items: center;
 }
 
