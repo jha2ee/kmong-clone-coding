@@ -1,3 +1,4 @@
+/* data.json에서 데이터 가져오기 */
 function fetchData() {
   fetch("./js/data.json")
     .then((response) => {
