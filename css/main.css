@@ -15,6 +15,11 @@ input {
   outline: none;
 }
 
+a {
+  text-decoration: none;
+  color: var(--primary-black);
+}
+
 section {
    min-height: 50px; /*임시*/
    display: flex;
