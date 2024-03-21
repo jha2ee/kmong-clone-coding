@@ -84,16 +84,7 @@ function getElements() {
 
     categoryEl.appendChild(listEl);
     contentEl.appendChild(categoryEl);
-    addSeparateLines();
   });
-}
-
-function addSeparateLines() {
-  for (i = 2; i < 5; i++) {
-    const line = document.createElement("div");
-    line.className = "separate-line";
-    //document.querySelector(`.rank${i}`).after(line);
-  }
 }
 
 getElements();
