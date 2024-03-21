@@ -193,7 +193,6 @@
 }
 
 .section-review .text {
-  margin: 10px 0;
   display: flex;
 }
 
@@ -205,11 +204,12 @@
 
 .name {
   font-weight: 800;
-
+  margin-top: 12px;
 }
 
 .sub-name {
   color: var(--font-gray);
+  margin-top: 12px;
 }
 
 /* section-blog */
@@ -235,8 +235,6 @@
 }
 
 .section-blog .text {
-  padding: 10px 4px;
-  line-height: 1.4;
   text-align: left;
 }
 
@@ -244,9 +242,9 @@
   margin-top: 48px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 8px;
-  border: 1px solid #C8CAD2;
+  border: 1px solid #c8cad2;
   width: 220px;
   padding: 20px;
   font-weight: 800;
@@ -262,4 +260,61 @@
 
 .section-blog .btn:active {
   background-color: var(--active-gray);
+}
+
+/* section-ranking */
+.section-ranking {
+  height: 700px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.section-ranking .section-content {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-ranking .section-content .box {
+  border-radius: 8px;
+  border: 2px solid #ffd400;
+  margin-bottom: 12px;
+}
+
+.section-ranking .section-content h2{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--primary-yellow);
+  padding: 12px 0;
+}
+.section-ranking .category {
+  width: 30%;
+}
+
+.section-ranking .section-content .item {
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  padding: 24px 24px 24px 12px;
+}
+
+.section-ranking .section-content img {
+  width: 60px;
+  border-radius: 90px;
+}
+
+.section-ranking .section-content .text-area {
+  width: 60%;
+}
+
+.section-ranking .rest-list {
+  border-radius: 8px;
+  box-shadow: rgba(48, 52, 65, 0.08) 0px 5px 23px -2px;
+}
+
+.section-ranking .rest-list .separate-line {
+  width: calc(100% - 48px);
+  margin: 0px auto;
+  border-bottom: 1px solid var(--active-gray);
 }
