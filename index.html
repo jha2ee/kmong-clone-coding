@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/section.css">
     <script defer src="./js/main.js"></script>
     <script defer src="./js/open_ad.js"></script>
+    <script defer src="./js/blog_posts.js"></script>
 </head>
 
 <body>
@@ -105,7 +106,7 @@
         <div class="section-content">
             <h2 class="section-title">크몽을 이용한 회원들의 생생한 후기</h2>
             <p class="section-text gray-text">274만 건의 리뷰에서 평균 만족도는 98.8%에 달했어요.</p>
-            <div class="review-list col">
+            <div class="box-list col">
                 <div>
                     <div class="video">
                         <iframe allowfullscreen=""
@@ -115,7 +116,7 @@
                     </div>
                     <div class="text">
                         <p class="name">인재식당 |&nbsp;</p>
-                        <p class="sub-name">자영업자</p>
+                        <p class="name sub-name">자영업자</p>
                     </div>
                 </div>
 
@@ -125,7 +126,7 @@
                     </div>
                     <div class="text">
                         <p class="name">필로스토리 |&nbsp;</p>
-                        <p class="sub-name">2인 창업팀</p>
+                        <p class="name sub-name">2인 창업팀</p>
                     </div>
                 </div>
                 <div>
@@ -134,13 +135,20 @@
                     </div>
                     <div class="text">
                         <p class="name">데이터비 |&nbsp;</p>
-                        <p class="sub-name">엔터프라이즈 고객</p>
+                        <p class="name sub-name">엔터프라이즈 고객</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section-blog">blog</section>
+    <section class="section-blog">
+        <div class="section-content">
+            <h2 class="section-title">크몽, 제대로 활용하는 법</h2>
+            <p class="section-text gray-text">실제 크몽을 통해 삶을 변화시킨 이야기를 들어보세요</p>
+            <div id="blog-content" class="box-list col"></div>
+            <div class="btn" onclick="alert('click')">더보기</div>
+        </div>
+    </section>
     <div class="ad-banner b2">
         <img class="ad2 b2" src="./img/banner/main_themes_enterprise_single_banner_v4.webp" alt="">
     </div>
