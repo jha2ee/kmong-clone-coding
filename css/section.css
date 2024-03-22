@@ -98,6 +98,11 @@
 #signup:active {
   background-color: rgb(184, 138, 3);
 }
+/* section-slider */
+.section-slider {
+  width: 100%;
+  margin-top: 40px;
+}
 
 /* section-category */
 .section-category {
