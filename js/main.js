@@ -8,6 +8,7 @@ function fetchData() {
       setMenu(jsondata.menu);
       setFooter(jsondata.footer);
       setCategory(jsondata.category);
+      setServices(jsondata.favoriteService);
     });
 }
 
@@ -79,6 +80,52 @@ function setCategory(data) {
     boxEl.appendChild(contentEl);
 
     sectionEl.appendChild(boxEl);
+  });
+}
+function setServices(data) {
+  const tabListEl = document.getElementById('service-tab-list');
+  const tabContentEl = document.getElementById('service-tab-content');
+  
+  data.forEach((group, index) => {
+    const btnEl = document.createElement('button');
+    btnEl.textContent = Object.keys(group)[0];
+    btnEl.classList.add('btn');
+    if (index == 0) {
+    btnEl.classList.add('active');
+    }
+    tabListEl.appendChild(btnEl);
+
+    const items = group[Object.keys(group)[0]];
+    const divEl = document.createElement('div');
+    divEl.classList.add('contents-area');
+    if (index == 0) {
+      divEl.classList.add('active');
+      }
+    items.forEach(item => {
+      const itemEl = document.createElement('div');
+      itemEl.classList.add('item');
+      const imgEl = document.createElement('img');
+      const titleEl = document.createElement('div');
+      const priceEl = document.createElement('p');
+      const starEl = document.createElement('span');
+
+      imgEl.src = item.image;
+      titleEl.innerHTML = item.title;
+      priceEl.innerHTML = item.price;
+      starEl.innerHTML = item.star;
+      
+      itemEl.addEventListener("click", function() {
+        window.open(item.link);
+      });
+      itemEl.appendChild(imgEl);
+      itemEl.appendChild(titleEl);
+      itemEl.appendChild(priceEl);
+      itemEl.appendChild(starEl);
+
+      divEl.appendChild(itemEl);
+    })
+    
+    tabContentEl.appendChild(divEl);
   });
 }
 

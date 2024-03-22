@@ -130,6 +130,64 @@
 .section-category img {
   width: 48px;
 }
+/* section-service */
+.section-service {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  /* height: 400px; */
+}
+.section-service .tab-list {
+  display: flex;
+  gap: 8px;
+}
+
+.section-service .btn{
+  width: auto;
+  padding: 8px 16px;
+}
+.section-service .contents-area {
+  margin: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+.section-service .tab-list .active {
+  background-color: var(--primary-black);
+  color: #FFF;
+  transition: 0.3s;
+}
+.section-service .tab-content .active {
+  display: flex;
+}
+
+.section-service .tab-content img{
+  width: 200px;
+  border-radius: 8px;
+  background-color: var(--hover-gray);
+}
+.section-service .tab-content .item {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.section-service .tab-content .item div {
+  font-weight: normal;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.section-service .tab-content .item p {
+  font-size: 16px;
+  font-weight: 800;
+  text-align: right;
+}
+.section-service .tab-content .item span {
+  font-size: 13px;
+  font-weight: 600;
+  text-align: right;
+  color: var(--font-gray);
+}
+
 
 /* section-teaser */
 .section-teaser {
