@@ -1,10 +1,10 @@
 :root {
   font-family: "Noto Sans KR", sans-serif;
   --primary-black: #212224;
-  --primary-yellow: #FFD400;
-  --border-gray: #C8CAD2;
-  --hover-gray: #F2F3F7;
-  --active-gray: #E4E5Ed;
+  --primary-yellow: #ffd400;
+  --border-gray: #c8cad2;
+  --hover-gray: #f2f3f7;
+  --active-gray: #e4e5ed;
   --font-gray: #555969;
   --font-gray2: #727585;
   color: var(--primary-black);
@@ -31,7 +31,6 @@ iframe {
   font-size: 24px;
   font-weight: 600;
   line-height: 48px;
-
 }
 
 .hr-line {
@@ -40,10 +39,10 @@ iframe {
 }
 
 section {
-   min-height: 50px; /*임시*/
-   width: 1200px;
-   margin: 0 auto;
-   align-items: center;
+  min-height: 50px; /*임시*/
+  width: 1200px;
+  margin: 0 auto;
+  align-items: center;
 }
 
 button {
@@ -68,7 +67,7 @@ button:active {
   background-color: var(--active-gray);
 }
 
-.ad-banner img{
+.ad-banner img {
   cursor: pointer;
   display: block;
   margin-right: auto;
@@ -93,7 +92,6 @@ button:active {
 }
 .top-banner {
   background-color: var(--primary-yellow);
-  
 }
 .sticky-banner {
   object-fit: contain;
@@ -141,7 +139,7 @@ footer .list {
 }
 
 .list .item {
-  flex:1;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -177,13 +175,13 @@ footer .list {
 }
 
 .info-blue {
-  background: #F7FBFF;
-  color: #116AD4;
+  background: #f7fbff;
+  color: #116ad4;
 }
 
 .info-red {
-  background: #FFF8F7;
-  color: #FF7262;
+  background: #fff8f7;
+  color: #ff7262;
 }
 
 .icon-bg-blue {
@@ -194,11 +192,9 @@ footer .list {
   background-color: #ffedeb;
 }
 
-
 .swiper {
   width: 100%;
   height: 100%;
-  overflow: visible;
 }
 
 .swiper-slide {
@@ -211,7 +207,7 @@ footer .list {
 
 .swiper-slide img {
   display: block;
-  width: 80%;
+  width: 100%;
   height: 100%;
   object-fit: contain;
 }
@@ -225,19 +221,30 @@ footer .list {
   align-items: center;
 }
 
-#custom-swiper .swiper-button-prev,
-#custom-swiper .swiper-button-next {
-  background-color: #FFF;
-  color: var(--font-gray2);
-  border: none;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+.custom-swiper-button-prev,
+.custom-swiper-button-next {
   width: 32px;
   height: 32px;
   border-radius: 90px;
+  z-index: 15;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
 }
 
-#custom-swiper .swiper-pagination {
+.swiper-pagination {
+  width: 80px;
+  position: relative;
   font-size: 18px;
-  position: absolute;
-  bottom: -32px;
+}
+
+.swiper-navigation {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }

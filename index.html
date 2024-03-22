@@ -13,15 +13,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/section.css">
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="./js/main.js"></script>
     <script defer src="./js/service-tab.js"></script>
     <script defer src="./js/open_ad.js"></script>
     <script defer src="./js/blog_posts.js"></script>
     <script type="module" src="./js/ranking.js"></script>
-
-
-
 </head>
 
 <body>
@@ -63,48 +60,54 @@
     </header>
     <div class="hr-line"></div>
     <section class="section-slider">
-<!-- Swiper -->
-<div class="swiper mySwiper swiper-container" id="custom-swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="./img/cards/1syx1_curated_content_item_main_desktop_1568.webp" alt=""></div>
-      <div class="swiper-slide"><img src="./img/cards/8ZsQi_curated_content_item_main_desktop_1569.webp" alt=""></div>
-      <div class="swiper-slide"><img src="./img/cards/jAYfh_curated_content_item_main_desktop_1566.webp" alt=""></div>
-      <div class="swiper-slide"><img src="./img/cards/nM8R8_curated_content_item_main_desktop_1567.webp" alt=""></div>
-      <div class="swiper-slide"><img src="./img/cards/Nulgg_curated_content_item_main_desktop_1564.webp" alt=""></div>
-      <div class="swiper-slide"><img src="./img/cards/QIbs5_curated_content_item_main_desktop_1225.webp" alt=""></div>
-      <div class="swiper-slide"><img src="./img/cards/RTd8F_curated_content_item_main_desktop_1561.webp" alt=""></div>
-      <div class="swiper-slide"><img src="./img/cards/w7ilY_curated_content_item_main_desktop_1560.webp" alt=""></div>
+        <!-- Swiper -->
+        <div class="swiper cardSwiper swiper-container" id="custom-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/cards/1syx1_curated_content_item_main_desktop_1568.webp"
+                        alt=""></div>
+                <div class="swiper-slide"><img src="./img/cards/8ZsQi_curated_content_item_main_desktop_1569.webp"
+                        alt=""></div>
+                <div class="swiper-slide"><img src="./img/cards/jAYfh_curated_content_item_main_desktop_1566.webp"
+                        alt=""></div>
+                <div class="swiper-slide"><img src="./img/cards/nM8R8_curated_content_item_main_desktop_1567.webp"
+                        alt=""></div>
+                <div class="swiper-slide"><img src="./img/cards/Nulgg_curated_content_item_main_desktop_1564.webp"
+                        alt=""></div>
+                <div class="swiper-slide"><img src="./img/cards/QIbs5_curated_content_item_main_desktop_1225.webp"
+                        alt=""></div>
+                <div class="swiper-slide"><img src="./img/cards/RTd8F_curated_content_item_main_desktop_1561.webp"
+                        alt=""></div>
+                <div class="swiper-slide"><img src="./img/cards/w7ilY_curated_content_item_main_desktop_1560.webp"
+                        alt=""></div>
+            </div>
+                  </div>
+                  <div class="swiper-navigation">
+                    <button class="custom-swiper-button-prev btn"><svg aria-hidden="true" fill="currentColor" focusable="false" height="16" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="16" class="css-7kp13n"><path clip-rule="evenodd" d="M16.2071 19.7071C16.5976 19.3166 16.5976 18.6834 16.2071 18.2929L9.91421 12L16.2071 5.70711C16.5976 5.31658 16.5976 4.68342 16.2071 4.29289C15.8166 3.90237 15.1834 3.90237 14.7929 4.29289L7.79289 11.2929C7.40237 11.6834 7.40237 12.3166 7.79289 12.7071L14.7929 19.7071C15.1834 20.0976 15.8166 20.0976 16.2071 19.7071Z" fill-rule="evenodd"></path></svg></button>
+                    <div class="swiper-pagination"></div>
+                    <button class="custom-swiper-button-next"><svg aria-hidden="true" fill="currentColor" focusable="false" height="16" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" width="16" class="css-7kp13n"><path clip-rule="evenodd" d="M7.79289 19.7071C7.40237 19.3166 7.40237 18.6834 7.79289 18.2929L14.0858 12L7.79289 5.70711C7.40237 5.31658 7.40237 4.68342 7.79289 4.29289C8.18342 3.90237 8.81658 3.90237 9.20711 4.29289L16.2071 11.2929C16.5976 11.6834 16.5976 12.3166 16.2071 12.7071L9.20711 19.7071C8.81658 20.0976 8.18342 20.0976 7.79289 19.7071Z" fill-rule="evenodd"></path></svg></button>
       
-    </div>
-    <button class="swiper-button-next"></button>
-    <button class="swiper-button-prev"></button>
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <!-- Swiper JS -->
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 2,
-      centeredSlides: true,
-      spaceBetween: 10,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        type: "fraction"
-      },
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-
+                  </div>
+                     
+        <script>
+            var swiper = new Swiper(".cardSwiper", {
+                slidesPerView: 2,
+                centeredSlides: true,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction"
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: ".custom-swiper-button-next",
+                    prevEl: ".custom-swiper-button-prev",
+                },
+            });
+        </script>
     </section>
     <section class="section-category">
         <h2 class="semi-title">700여 개의 카테고리가 준비되어 있어요</h2>
