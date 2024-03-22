@@ -148,7 +148,8 @@
 
 .section-service .btn{
   width: auto;
-  padding: 8px 16px;
+  padding: 8px 12px;
+  border-radius: 90px;
 }
 .section-service .contents-area {
   margin: 24px 0;
@@ -177,8 +178,9 @@
   gap: 6px;
 }
 .section-service .tab-content .item div {
-  font-weight: normal;
+  font-weight: 600;
   font-size: 14px;
+  line-height: 1.4;
   margin-bottom: 8px;
 }
 .section-service .tab-content .item p {
@@ -192,7 +194,6 @@
   text-align: right;
   color: var(--font-gray);
 }
-
 
 /* section-teaser */
 .section-teaser {
