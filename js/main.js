@@ -16,8 +16,13 @@ function setMenu(data) {
   const menuEl = document.querySelector(".sub-category");
   data.forEach((i) => {
     const item = document.createElement("div");
-    item.className = "sub-category-item";
+    if (i.title !== '|') {
+      item.className = "sub-category-item";
+    }
     item.textContent = i.title;
+    item.addEventListener("click", function() {
+      console.log(i.title);
+    })
     menuEl.appendChild(item);
   });
 }
