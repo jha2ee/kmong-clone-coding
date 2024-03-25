@@ -21,7 +21,6 @@
 }
 
 /* section-header */
-
 .header {
   display: flex;
   gap: 20px;
@@ -32,6 +31,7 @@
   background-color: #fff;
   top: 0;
   z-index: 30;
+  border-bottom: 1px solid transparent;
 }
 
 .header .search {
@@ -69,7 +69,7 @@
 
 .header .item a {
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
 }
 .section-header .category {
   width: 100%;
@@ -206,6 +206,7 @@
   cursor: pointer;
 }
 .section-service .tab-content .item div {
+  min-height: 32px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.4;
