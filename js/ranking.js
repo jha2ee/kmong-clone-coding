@@ -53,7 +53,7 @@ function getElements() {
       itemEl.classList.add(`rank${index + 2}`);
       const rankEl = document.createElement("img");
       rankEl.classList.add("rank");
-      rankEl.src = `../img/icon/ranking-0${index + 2}.webp`;
+      rankEl.src = `./img/icon/ranking-0${index + 2}.webp`;
       const div = document.createElement("div");
       div.classList.add("text-area");
       const priceEl = document.createElement("div");
