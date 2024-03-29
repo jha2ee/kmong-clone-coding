@@ -248,3 +248,16 @@ footer .list {
   justify-content: center;
   align-items: end;
 }
+
+@media screen and (max-width: 1200px) {
+  body {
+    width: 1200px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 960) {
+  body {
+    width: 960px;
+  }
+}
