@@ -15,7 +15,7 @@ function getElements() {
     rank1El.classList.add(`rank1`);
     const rankEl = document.createElement("img");
     rankEl.classList.add("rank");
-    rankEl.src = `../img/icon/ranking-01.webp`;
+    rankEl.src = `./img/icon/ranking-01.webp`;
     const div = document.createElement("div");
     div.classList.add("text-area");
     const priceEl = document.createElement("div");
